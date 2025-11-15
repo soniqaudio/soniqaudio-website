@@ -19,7 +19,7 @@ export default function IntroducingSoniqaudio() {
       </p>
 
       <p>
-        over the last year i got into the dev world and started building my own little apps, websites and more, but i always wanted to build fun, creative and useful apps in the audio / music space
+        over the last year i got into the dev world and started my own little apps, websites and more, but i always wanted to build fun, creative and useful apps in the audio / music space
       </p>
 
       <p>

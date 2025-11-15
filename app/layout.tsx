@@ -9,7 +9,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "SoniqAudio - open source apps for music producers",
+  title: "SoniqAudio",
   description:
     "Open source audio production tools built by creators, for creators. Professional-grade software free forever. Building Tone, a web-based DAW for music producers.",
   keywords: [
@@ -49,8 +49,11 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"],
   },
   icons: {
-    icon: "/soniqaudio-logo.jpg",
-    apple: "/apple-icon.png",
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
 }
 

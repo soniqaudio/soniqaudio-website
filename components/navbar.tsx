@@ -19,7 +19,7 @@ export function Navbar() {
                 className="object-contain block dark:hidden"
               />
               <Image
-                src="/soniqaudio-logo.jpg"
+                src="/soniqaudio-logo.png"
                 alt="SoniqAudio"
                 width={32}
                 height={32}

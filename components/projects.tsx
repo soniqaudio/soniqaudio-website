@@ -16,9 +16,9 @@ export function Projects() {
             <div className="size-2 rounded-full bg-primary animate-pulse" />
             <span className="font-mono text-xs tracking-wider text-muted-foreground">PROJECTS</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Open source audio tools</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Current projects</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Professional-grade software built by creators, for creators
+            Creative audio and music apps built by musicians, for musicians.
           </p>
         </div>
 

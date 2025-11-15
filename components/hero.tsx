@@ -1,8 +1,27 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Plus } from "lucide-react"
+import { ArrowRight, Plus, Star } from "lucide-react"
 import Link from "next/link"
+import { useEffect, useState } from "react"
 
 export function Hero() {
+  const [starCount, setStarCount] = useState<number | null>(null)
+
+  useEffect(() => {
+    // Fetch star count from our API route
+    fetch('/api/github-stars')
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.stars !== undefined) {
+          setStarCount(data.stars)
+        }
+      })
+      .catch((error) => {
+        console.error('Failed to fetch star count:', error)
+      })
+  }, [])
+
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-16">
       {/* Grid background */}
@@ -43,10 +62,10 @@ export function Hero() {
 
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-center mb-6 text-balance">
-            Music production.{" "}
+            Music production{" "}
             <span className="relative inline-block">
               <span className="relative z-10 bg-gradient-to-br from-foreground via-primary to-foreground bg-clip-text text-transparent">
-                Built for the web.
+                built for the web.
               </span>
               <div className="absolute inset-0 -z-0 bg-primary/10 blur-2xl" style={{ transform: "translateY(20%)" }} />
             </span>
@@ -66,8 +85,14 @@ export function Hero() {
               </Button>
             </Link>
             <Link href="https://github.com/soniqaudio" target="_blank" className="cursor-pointer">
-              <Button size="lg" variant="outline" className="border-foreground/20 bg-background hover:bg-foreground hover:text-background dark:border-border dark:bg-input/30 dark:hover:bg-input/50 dark:hover:text-foreground">
-                View on GitHub
+              <Button size="lg" variant="outline" className="border border-foreground/30 bg-background/50 hover:border-foreground/40 hover:bg-background/70 hover:text-foreground dark:border-foreground/25 dark:bg-background/40 dark:hover:border-foreground/35 dark:hover:bg-background/60 transition-all">
+                <Star className="mr-2 size-4" />
+                Star on GitHub
+                {starCount !== null && (
+                  <span className="ml-2 px-2 py-0.5 rounded-full bg-muted/60 text-foreground text-sm">
+                    {starCount.toLocaleString()}
+                  </span>
+                )}
               </Button>
             </Link>
           </div>

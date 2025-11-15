@@ -22,7 +22,7 @@ export function Footer() {
                 className="rounded-lg block dark:hidden"
               />
               <Image
-                src="/soniqaudio-logo.jpg"
+                src="/soniqaudio-logo.png"
                 alt="SoniqAudio"
                 width={56}
                 height={56}
