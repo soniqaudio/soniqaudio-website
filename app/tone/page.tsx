@@ -35,30 +35,35 @@ export default function TonePage() {
 
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-muted/30 mb-6">
-              <div className="size-2 rounded-full bg-primary animate-pulse" />
-              <span className="font-mono text-xs tracking-wider text-muted-foreground">DAW</span>
+            <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-muted/30">
+                <div className="size-2 rounded-full bg-primary animate-pulse" />
+                <span className="font-mono text-xs tracking-wider text-muted-foreground">DAW</span>
+              </div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-muted/30">
+                <span className="font-mono text-xs tracking-wider text-muted-foreground">music production</span>
+              </div>
             </div>
 
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 text-balance">
-              tone
+              Tone
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-              a powerful web-based digital audio workstation inspired by industry leaders like fl studio and ableton. create, produce, and mix music entirely in your browser with professional-grade tools.
+              a web-based digital audio workstation. create, produce, and mix music directly in your browser.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
               <Link href="https://tonedaw.com" target="_blank">
                 <Button size="lg" className="group bg-foreground text-background hover:bg-foreground/90 dark:bg-primary dark:text-primary-foreground dark:hover:bg-primary/90">
-                  open tone
+                  Open Tone
                   <ArrowUpRight className="ml-2 size-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </Button>
               </Link>
               <Link href="https://github.com/soniqaudio/tone" target="_blank">
                 <Button size="lg" variant="outline" className="border-border bg-background hover:bg-accent hover:text-accent-foreground">
                   <Star className="mr-2 size-4" />
-                  star on github
+                  Star on GitHub
                 </Button>
               </Link>
             </div>
@@ -85,9 +90,9 @@ export default function TonePage() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">features</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">Features</h2>
               <p className="text-lg text-muted-foreground">
-                everything you need to create professional music
+                Everything you need to create professional music
               </p>
             </div>
 
@@ -95,17 +100,17 @@ export default function TonePage() {
               {[
                 {
                   icon: <Zap className="size-6" />,
-                  title: "real-time processing",
+                  title: "Real-Time Processing",
                   description: "low-latency audio processing powered by the web audio api. create and mix without any noticeable delay."
                 },
                 {
                   icon: <Code className="size-6" />,
-                  title: "open source",
+                  title: "Open Source",
                   description: "built by creators, for creators. completely open source and free to use. contribute and help shape the future of web-based music production."
                 },
                 {
                   icon: <Globe className="size-6" />,
-                  title: "browser-based",
+                  title: "Browser-Based",
                   description: "no installation required. works on any device with a modern browser. access your projects from anywhere in the world."
                 }
               ].map((feature, idx) => (
@@ -155,14 +160,14 @@ export default function TonePage() {
               <div className="-inset-y-6 pointer-events-none absolute right-0 w-px border-r border-border" />
 
               <div className="text-center">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">ready to create?</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Create?</h2>
                 <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-8">
-                  tone is completely open source and free to use. start making music in your browser today, or contribute to help shape the future of web-based music production.
+                  Tone is completely open source and free to use. Start making music in your browser today, or contribute to help shape the future of web-based music production.
                 </p>
                 <div className="flex flex-wrap items-center justify-center gap-4">
                   <Link href="https://github.com/soniqaudio/tone" target="_blank">
                     <Button size="lg" className="group bg-foreground text-background hover:bg-foreground/90 dark:bg-primary dark:text-primary-foreground dark:hover:bg-primary/90">
-                      view source code
+                      View Source Code
                       <ArrowUpRight className="ml-2 size-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </Button>
                   </Link>

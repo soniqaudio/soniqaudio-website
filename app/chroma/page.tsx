@@ -35,30 +35,35 @@ export default function ChromaPage() {
 
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-muted/30 mb-6">
-              <div className="size-2 rounded-full bg-primary animate-pulse" />
-              <span className="font-mono text-xs tracking-wider text-muted-foreground">VISUALIZATION</span>
+            <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-muted/30">
+                <div className="size-2 rounded-full bg-primary animate-pulse" />
+                <span className="font-mono text-xs tracking-wider text-muted-foreground">piano</span>
+              </div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-muted/30">
+                <span className="font-mono text-xs tracking-wider text-muted-foreground">visuals</span>
+              </div>
             </div>
 
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 text-balance">
-              chroma
+              Chroma
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-              transform midi performances into expressive visual art. a piano midi visualization app that creates beautiful, dynamic visuals from your music.
+              transform midi performances into expressive visual art. chroma turns your piano performances into beautiful, dynamic visualizations.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
               <Link href="https://github.com/soniqaudio/chroma" target="_blank">
                 <Button size="lg" className="group bg-foreground text-background hover:bg-foreground/90 dark:bg-primary dark:text-primary-foreground dark:hover:bg-primary/90">
-                  view on github
+                  View on GitHub
                   <ArrowUpRight className="ml-2 size-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </Button>
               </Link>
               <Link href="https://github.com/soniqaudio/chroma" target="_blank">
                 <Button size="lg" variant="outline" className="border-border bg-background hover:bg-accent hover:text-accent-foreground">
                   <Star className="mr-2 size-4" />
-                  star on github
+                  Star on GitHub
                 </Button>
               </Link>
             </div>
@@ -85,9 +90,9 @@ export default function ChromaPage() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">features</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">Features</h2>
               <p className="text-lg text-muted-foreground">
-                bring your music to life with stunning visuals
+                Bring your music to life with stunning visuals
               </p>
             </div>
 
@@ -95,17 +100,17 @@ export default function ChromaPage() {
               {[
                 {
                   icon: <Music className="size-6" />,
-                  title: "midi support",
+                  title: "MIDI Support",
                   description: "connect your midi keyboard or load midi files. real-time visualization that responds to every note, velocity, and expression."
                 },
                 {
                   icon: <Palette className="size-6" />,
-                  title: "customizable visuals",
+                  title: "Customizable Visuals",
                   description: "adjust color mapping, particle effects, trails, and more. create visuals that match your artistic vision and style."
                 },
                 {
                   icon: <Sparkles className="size-6" />,
-                  title: "real-time rendering",
+                  title: "Real-Time Rendering",
                   description: "smooth, responsive visuals that react instantly to your performance. powered by canvas api for optimal performance."
                 }
               ].map((feature, idx) => (
@@ -155,14 +160,14 @@ export default function ChromaPage() {
               <div className="-inset-y-6 pointer-events-none absolute right-0 w-px border-r border-border" />
 
               <div className="text-center">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">ready to visualize?</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Visualize?</h2>
                 <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-8">
-                  chroma is completely open source and free to use. start creating stunning visuals from your music today, or contribute to help shape the future of music visualization.
+                  Chroma is completely open source and free to use. Start creating stunning visuals from your music today, or contribute to help shape the future of music visualization.
                 </p>
                 <div className="flex flex-wrap items-center justify-center gap-4">
                   <Link href="https://github.com/soniqaudio/chroma" target="_blank">
                     <Button size="lg" className="group bg-foreground text-background hover:bg-foreground/90 dark:bg-primary dark:text-primary-foreground dark:hover:bg-primary/90">
-                      view source code
+                      View Source Code
                       <ArrowUpRight className="ml-2 size-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </Button>
                   </Link>

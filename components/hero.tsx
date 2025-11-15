@@ -43,10 +43,10 @@ export function Hero() {
 
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-center mb-6 text-balance">
-            Building apps for{" "}
+            Music production.{" "}
             <span className="relative inline-block">
               <span className="relative z-10 bg-gradient-to-br from-foreground via-primary to-foreground bg-clip-text text-transparent">
-                music producers
+                Built for the web.
               </span>
               <div className="absolute inset-0 -z-0 bg-primary/10 blur-2xl" style={{ transform: "translateY(20%)" }} />
             </span>
@@ -54,14 +54,14 @@ export function Hero() {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground text-center mb-10 max-w-2xl mx-auto leading-relaxed">
-            Modern, open-source webapps for music producers, pianists and audio creators.
+            Modern, open-source apps for music producers, pianists and audio creators.
           </p>
 
           {/* CTA buttons */}
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link href="#projects" className="cursor-pointer">
               <Button size="lg" className="group bg-foreground text-background hover:bg-foreground/90 dark:bg-primary dark:text-primary-foreground dark:hover:bg-primary/90">
-                Explore Projects
+                Explore Apps
                 <ArrowRight className="ml-2 size-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>

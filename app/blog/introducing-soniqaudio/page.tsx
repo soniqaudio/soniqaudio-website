@@ -41,7 +41,7 @@ export default function IntroducingSoniqaudio() {
       <div className="space-y-8">
         <div>
           <h3 className="text-xl font-bold text-foreground mb-3">
-            tone: a web daw inspired by fl studio
+            Tone: a web daw inspired by fl studio
           </h3>
           <p className="mb-4">
             <Link 
@@ -65,7 +65,7 @@ export default function IntroducingSoniqaudio() {
 
         <div>
           <h3 className="text-xl font-bold text-foreground mb-3">
-            chroma: a piano midi visualization app
+            Chroma: a piano midi visualization app
           </h3>
           <p className="mb-4">
             <Link 
