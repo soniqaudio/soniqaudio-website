@@ -77,24 +77,6 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex items-center justify-center gap-3 mt-6 opacity-40">
-          <div className="h-px w-16 bg-foreground" />
-          <div className="h-8 w-px border-l border-dashed border-foreground" />
-          <div className="h-px w-16 bg-foreground" />
-        </div>
-
-        <div className="text-center mt-4">
-          <p className="text-xs text-muted-foreground font-mono">
-            built by{" "}
-            <Link
-              href="https://x.com/rvm0n_"
-              target="_blank"
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              @rvm0n_
-            </Link>
-          </p>
-        </div>
       </div>
     </footer>
   )

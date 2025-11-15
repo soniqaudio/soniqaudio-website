@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Plus, ArrowUpRight, Star, Code, Zap, Globe } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function TonePage() {
   return (
@@ -10,7 +11,7 @@ export default function TonePage() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden pt-24">
+      <section className="relative pt-24 pb-12 overflow-hidden">
         {/* Grid background */}
         <div className="absolute inset-0 -z-10">
           <div
@@ -33,7 +34,7 @@ export default function TonePage() {
         </div>
 
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center mb-12">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-muted/30 mb-6">
               <div className="size-2 rounded-full bg-primary animate-pulse" />
               <span className="font-mono text-xs tracking-wider text-muted-foreground">DAW</span>
@@ -47,7 +48,7 @@ export default function TonePage() {
               a powerful web-based digital audio workstation inspired by industry leaders like fl studio and ableton. create, produce, and mix music entirely in your browser with professional-grade tools.
             </p>
 
-            <div className="flex flex-wrap items-center justify-center gap-4">
+            <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
               <Link href="https://tonedaw.com" target="_blank">
                 <Button size="lg" className="group bg-foreground text-background hover:bg-foreground/90 dark:bg-primary dark:text-primary-foreground dark:hover:bg-primary/90">
                   open tone
@@ -62,11 +63,25 @@ export default function TonePage() {
               </Link>
             </div>
           </div>
+
+          {/* Screenshot */}
+          <div className="max-w-6xl mx-auto">
+            <div className="relative w-full rounded-lg overflow-hidden border border-border">
+              <Image
+                src="/tone.png"
+                alt="Tone DAW Screenshot"
+                width={1920}
+                height={1080}
+                className="w-full h-auto"
+                priority
+              />
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="relative py-24 md:py-32">
+      <section className="relative py-12 md:py-16">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -108,8 +123,8 @@ export default function TonePage() {
         </div>
       </section>
 
-      {/* Tech Stack & CTA Section */}
-      <section className="relative py-24 md:py-32">
+      {/* CTA Section */}
+      <section className="relative py-12 md:py-16">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="relative border-y border-border bg-accent/80 p-8 md:p-12">
@@ -139,21 +154,10 @@ export default function TonePage() {
               <div className="-inset-y-6 pointer-events-none absolute left-0 w-px border-l border-border" />
               <div className="-inset-y-6 pointer-events-none absolute right-0 w-px border-r border-border" />
 
-              <div className="text-center mb-8">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">built with modern web technologies</h2>
-                <div className="flex flex-wrap justify-center gap-3 mb-8">
-                  {["Web Audio API", "Next.js", "TypeScript", "Canvas API"].map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-4 py-2 text-sm font-mono border border-border rounded-full bg-background/50"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+              <div className="text-center">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">ready to create?</h2>
                 <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-8">
-                  tone leverages the full power of modern browsers to deliver professional-grade music production tools. 
-                  built with performance and accessibility in mind.
+                  tone is completely open source and free to use. start making music in your browser today, or contribute to help shape the future of web-based music production.
                 </p>
                 <div className="flex flex-wrap items-center justify-center gap-4">
                   <Link href="https://github.com/soniqaudio/tone" target="_blank">

@@ -78,7 +78,7 @@ export default function IntroducingSoniqaudio() {
           </p>
           <div className="relative w-full my-6 rounded-lg overflow-hidden border border-border">
             <Image
-              src="/synesthesia.png"
+              src="/chroma.png"
               alt="Chroma Screenshot"
               width={1200}
               height={675}
