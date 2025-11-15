@@ -54,7 +54,7 @@ export function Hero() {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground text-center mb-10 max-w-2xl mx-auto leading-relaxed">
-            Modern, open-source tools for music producers and audio creators.
+            Modern, open-source webapps for music producers, pianists and audio creators.
           </p>
 
           {/* CTA buttons */}

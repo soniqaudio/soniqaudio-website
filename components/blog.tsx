@@ -16,11 +16,11 @@ import {
 const blogPosts = [
   {
     id: 1,
-    slug: "introducing-tone-daw",
-    title: "Building Tone: a web based open source DAW for music producers",
-    excerpt: "We're excited to announce Tone, our new browser-based digital audio workstation that brings professional music production tools to your web browser.",
-    date: "2025-11-09",
-    readTime: "5 min read",
+    slug: "introducing-soniqaudio",
+    title: "Introducing SoniqAudio",
+    excerpt: "as a music producer for 10+ years, i've spent thousands of hours in my DAW, at the piano, making beats and i've been loving every second of it ever since.",
+    date: "2025-11-11",
+    readTime: "3 min read",
     category: "Announcements",
   },
 ]
@@ -67,7 +67,7 @@ export function BlogPage() {
           {blogPosts.map((post) => (
             <article
               key={post.id}
-              className="group relative border-y border-border bg-[radial-gradient(35%_80%_at_25%_0%,hsl(var(--foreground)/.08),transparent)] hover:bg-accent/80 hover:border-border transition-all duration-300"
+              className="group relative border-y border-border bg-accent/80"
             >
               {/* Corner plus icons */}
               <div className="absolute -top-[12.5px] -left-[11.5px] w-6 h-6 flex items-center justify-center text-foreground/30">
